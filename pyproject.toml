@@ -1,0 +1,16 @@
+[project]
+name = "agent-session-repro-bundle-checker-20260711"
+version = "0.1.0"
+description = "Agent Session Repro Bundle Checker"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "maxi-maxima"}]
+keywords = ["ai-agent", "developer-tools", "cli", "automation"]
+
+[project.scripts]
+agent-session-repro-bundle-checker-20260711 = "agent_session_repro_bundle_checker_20260711.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
