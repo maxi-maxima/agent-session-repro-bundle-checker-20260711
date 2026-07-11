@@ -14,7 +14,7 @@
 
         ```bash
         python -m pip install -e .
-        python -m agent_session_repro_bundle_checker_20260711.cli examples/bundle --json
+        python -m agent_session_repro_bundle_checker_20260711.cli examples/bundle --format markdown
         ```
 
         ## Example
