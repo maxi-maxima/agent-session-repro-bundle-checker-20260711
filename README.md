@@ -28,6 +28,9 @@ python -m agent_session_repro_bundle_checker_20260711.cli examples/bundle
 # Score: 86/100, missing: redactions.txt
 ```
 
+JSON output reports secret-like hit locations with redacted line text, so the
+checker can be shared without echoing the suspected credential.
+
         ## Self-check
 
         ```bash

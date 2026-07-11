@@ -10,4 +10,5 @@ class T(unittest.TestCase):
   with tempfile.TemporaryDirectory() as d:
    (Path(d)/'prompt.txt').write_text('auth_token = sample-secret-value')
    r=check_bundle(d); self.assertTrue(r['secret_hits']); self.assertEqual(r['status'],'review')
+   self.assertNotIn('sample-secret-value', r['secret_hits'][0]['text'])
 if __name__=='__main__': unittest.main()

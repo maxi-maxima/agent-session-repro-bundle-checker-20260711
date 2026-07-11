@@ -7,7 +7,7 @@ def scan_file(path):
     except Exception: return []
     hits=[]
     for i,line in enumerate(text.splitlines(),1):
-        if any(p.search(line) for p in SECRET_PATTERNS): hits.append({"file":str(path),"line":i,"text":line[:120]})
+        if any(p.search(line) for p in SECRET_PATTERNS): hits.append({"file":str(path),"line":i,"text":"[redacted secret-like line]"})
     return hits
 def check_bundle(root):
     root=Path(root); present=[]; missing=[]; score=0
